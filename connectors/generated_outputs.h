@@ -4,7 +4,6 @@
 #pragma once
 
 Gpio GENERATED_OUTPUTS = {
-	Gpio::B14, // B14 Output
 	Gpio::E0, // Inyector 1
 	Gpio::E1, // Inyector 2
 	Gpio::E2, // Inyector 3
@@ -13,7 +12,11 @@ Gpio GENERATED_OUTPUTS = {
 	Gpio::E5, // Bobina 2
 	Gpio::E6, // Bobina 3
 	Gpio::E7, // Bobina 4
-// "B14 Output",
+	Gpio::B5, // B5 Output
+	Gpio::B6, // B6 Output
+	Gpio::B7, // B7 Output
+	Gpio::B8, // B8 Output
+	Gpio::B9, // B9 Output
 // "Inyector 1",
 // "Inyector 2",
 // "Inyector 3",
@@ -22,4 +25,9 @@ Gpio GENERATED_OUTPUTS = {
 // "Bobina 2",
 // "Bobina 3",
 // "Bobina 4",
+// "B5 Output",
+// "B6 Output",
+// "B7 Output",
+// "B8 Output",
+// "B9 Output",
 }
