@@ -63,7 +63,7 @@ static void customBoardDefaultConfiguration() {
     // 6. SENSORES ANALÓGICOS
     // -----------------------------------------
     // Mapeo estándar del STM32F407
-    engineConfiguration->tps1_1.adcChannel      = EFI_ADC_0;  // PA0
+    //engineConfiguration->tps1_1.adcChannel      = EFI_ADC_0;  // PA0
     //engineConfiguration->knock.adcChannel       = EFI_ADC_3;  // PA3
     engineConfiguration->map.sensor.hwChannel   = EFI_ADC_4;  // PA4
     engineConfiguration->vbattAdcChannel        = EFI_ADC_5;  // PA5
