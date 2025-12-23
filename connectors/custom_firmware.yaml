@@ -1,12 +1,8 @@
 pins:
-  - id: B14
-    class: outputs
-    ts_name: B14 Output
-
   - id: EFI_ADC_0
     class: analog_inputs
 # getAdcChannelBrainPin in 'stm32_adc.cpp' says EFI_ADC_0 is PA0
-    ts_name: On-board Battery Sense (A0)
+    ts_name: Battery Sense (A0)
 
   - id: EFI_ADC_1
     class: analog_inputs
@@ -115,8 +111,30 @@ pins:
   - id: E7
     class: outputs
     ts_name: "Bobina 4"
-    
 
+    ############################################
+
+  - id: B5
+    class: outputs
+    ts_name: B5 Output
+
+  - id: B6
+    class: outputs
+    ts_name: B6 Output  
+
+
+  - id: B7
+    class: outputs
+    ts_name: B7 Output
+
+  - id: B8
+    class: outputs
+    ts_name: B8 Output
+
+    
+  - id: B9
+    class: outputs
+    ts_name: B9 Output
 
 
       
