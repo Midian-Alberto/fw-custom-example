@@ -1,6 +1,12 @@
 #include "pch.h"
 #include "board_overrides.h"
 
+// =============================================
+// DESACTIVAR LEDS (CRÍTICO)
+// =============================================
+// D12 y D13 serán usados para Bobinas.
+// Debemos decirle al sistema que NO intente usarlos como LEDs.
+
 Gpio getCommsLedPin() {
 	return Gpio::Unassigned;
 }
@@ -13,35 +19,72 @@ Gpio getWarningLedPin() {
 	return Gpio::Unassigned;
 }
 
-// board-specific configuration setup
+// =============================================
+// CONFIGURACIÓN DE TU PLACA
+// =============================================
 static void customBoardDefaultConfiguration() {
-    // engineConfiguration->injectionPins[0] = Gpio::F13;
-    // engineConfiguration->ignitionPins[0] = Gpio::E15;
 
-//   engineConfiguration->triggerInputPins[0] = Gpio::B1;
-//	engineConfiguration->triggerInputPins[1] = Gpio::Unassigned;
+    // 1. INYECCIÓN (Puerto E Alto)
+    // -----------------------------------------
+    engineConfiguration->injectionPins[0] = Gpio::E7;  // Cilindro 1
+    engineConfiguration->injectionPins[1] = Gpio::E8;  // Cilindro 2
+    engineConfiguration->injectionPins[2] = Gpio::E9;  // Cilindro 3
+    engineConfiguration->injectionPins[3] = Gpio::E10; // Cilindro 4
 
-//	engineConfiguration->map.sensor.hwChannel = EFI_ADC_3;
+    // 2. IGNICIÓN (Puerto D Medio)
+    // -----------------------------------------
+    // Usamos D10-D13. Esto deja libres D8 y D9 para Bluetooth.
+    engineConfiguration->ignitionPins[0] = Gpio::D10; // Bobina 1
+    engineConfiguration->ignitionPins[1] = Gpio::D11; // Bobina 2
+    engineConfiguration->ignitionPins[2] = Gpio::D12; // Bobina 3
+    engineConfiguration->ignitionPins[3] = Gpio::D13; // Bobina 4
 
-//	engineConfiguration->clt.adcChannel = EFI_ADC_1;
+    // 3. TRIGGER (Sensor de Posición)
+    // -----------------------------------------
+    // 120-2 en Arbol de Levas (Camshaft) en C6.
+    engineConfiguration->triggerInputPins[0] = Gpio::C6;       
+    engineConfiguration->triggerInputPins[1] = Gpio::Unassigned; 
 
-//	engineConfiguration->iat.adcChannel = EFI_ADC_2;
+    // 4. BOMBA Y RELÉS (Puerto B)
+    // -----------------------------------------
+    engineConfiguration->mainRelayPin  = Gpio::B10;
+    engineConfiguration->fuelPumpPin   = Gpio::B11;
+    engineConfiguration->tachOutputPin = Gpio::B13;
+    engineConfiguration->fanPin        = Gpio::B14;
+    engineConfiguration->fan2Pin       = Gpio::B15;
 
+    // 5. ENTRADAS DIGITALES (Switches)
+    // -----------------------------------------
+    engineConfiguration->acSwitch      = Gpio::E15;
+    engineConfiguration->clutchUpPin   = Gpio::E13;
+    engineConfiguration->clutchDownPin = Gpio::E12;
+    engineConfiguration->brakePedalPin = Gpio::E14;
 
-    	// 5.6k high side/10k low side = 1.56 ratio divider
-  //  	engineConfiguration->analogInputDividerCoefficient = 1.56f;
+    // 6. SENSORES ANALÓGICOS
+    // -----------------------------------------
+    // Mapeo estándar del STM32F407
+    engineConfiguration->tps1_1.adcChannel      = EFI_ADC_0;  // PA0
+    engineConfiguration->knock.adcChannel       = EFI_ADC_3;  // PA3
+    engineConfiguration->map.sensor.hwChannel   = EFI_ADC_4;  // PA4
+    engineConfiguration->vbattAdcChannel        = EFI_ADC_5;  // PA5
+    engineConfiguration->clt.adcChannel         = EFI_ADC_6;  // PA6
+    engineConfiguration->iat.adcChannel         = EFI_ADC_7;  // PA7
 
-    	// 6.34k high side/ 1k low side
-//    	engineConfiguration->vbattDividerCoeff = (6.34 + 1) / 1;
+    // Resistencias y calibración estándar
+    engineConfiguration->analogInputDividerCoefficient = 1.56f;
+    engineConfiguration->vbattDividerCoeff = (6.34 + 1) / 1;
+    engineConfiguration->adcVcc = 3.3f;
+    engineConfiguration->clt.config.bias_resistor = 2490;
+    engineConfiguration->iat.config.bias_resistor = 2490;
 
-//	engineConfiguration->adcVcc = 3.3f;
-
-//	engineConfiguration->clt.config.bias_resistor = 2490;
-//	engineConfiguration->iat.config.bias_resistor = 2490;
-
-
-	// Battery sense on PA0
-//	engineConfiguration->vbattAdcChannel = EFI_ADC_0;
+    // 7. COMUNICACIÓN
+    // -----------------------------------------
+    // Dejamos CAN sin asignar para ahorrar recursos y pines
+    engineConfiguration->canTxPin = Gpio::Unassigned;
+    engineConfiguration->canRxPin = Gpio::Unassigned;
+    
+    // NOTA: Los pines D8 y D9 NO se tocan aquí.
+    // Se activarán automáticamente como Serial 3 en el Makefile.
 }
 
 void setup_custom_board_overrides() {
