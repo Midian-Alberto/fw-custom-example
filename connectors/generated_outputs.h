@@ -5,5 +5,21 @@
 
 Gpio GENERATED_OUTPUTS = {
 	Gpio::B14, // B14 Output
+	Gpio::E7, // Inyector 1
+	Gpio::E8, // Inyector 2
+	Gpio::E9, // Inyector 3
+	Gpio::E10, // Inyector 4
+	Gpio::D10, // Bobina 1
+	Gpio::D11, // Bobina 2
+	Gpio::D12, // Bobina 3
+	Gpio::D13, // Bobina 4
 // "B14 Output",
+// "Inyector 1",
+// "Inyector 2",
+// "Inyector 3",
+// "Inyector 4",
+// "Bobina 1",
+// "Bobina 2",
+// "Bobina 3",
+// "Bobina 4",
 }
