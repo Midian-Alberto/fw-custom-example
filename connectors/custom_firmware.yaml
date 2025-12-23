@@ -26,7 +26,7 @@ pins:
 
   - id: EFI_ADC_5
     class: analog_inputs
-    ts_name:  MAP (A5)
+    ts_name: MAP (A5)
 
   - id: EFI_ADC_6
     class: analog_inputs
@@ -68,9 +68,9 @@ pins:
     class: analog_inputs
     ts_name: Analog Inputs 15 (C5)
 
-  - id: [C6, C6]
+  - id: [E2, E2]
     class: [switch_inputs, event_inputs]
-    ts_name: VR/Hall 1 (C6)
+    ts_name: VR/Hall 1 (E2)
 
   - id: [E3, E3]
     class: [switch_inputs, event_inputs]
@@ -82,18 +82,3 @@ pins:
 
     ###############################################################
 
-- id: E7
-    class: outputs
-    ts_name: "Inyector 1 (E7)"
-
-  - id: E8
-    class: outputs
-    ts_name: "Inyector 2 (E8)"
-
-  - id: E9
-    class: outputs
-    ts_name: "Inyector 3 (E9)"
-
-  - id: E10
-    class: outputs
-    ts_name: "Inyector 4 (E10)"
