@@ -12,6 +12,9 @@ DDEFS += -DSTM32F407xx
 # this would save some flash while being unable to update WBO controller firmware
 DDEFS += -DEFI_WIDEBAND_FIRMWARE_UPDATE=TRUE
 
+DDEFS += -DSTM32_ADC_USE_ADC3=TRUE
+# todo: make knock pin software-selectable?
+DDEFS += -DEFI_SOFTWARE_KNOCK=TRUE -DSTM32_ADC_USE_ADC3=TRUE
 
 # assign critical LED to a non-existent pin if you do not have it on your board
 # good old PD14 is still the default value
