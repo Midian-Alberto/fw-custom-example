@@ -64,7 +64,7 @@ static void customBoardDefaultConfiguration() {
     // -----------------------------------------
     // Mapeo estándar del STM32F407
     //engineConfiguration->tps1_1.adcChannel      = EFI_ADC_0;  // PA0
-    //engineConfiguration->knock.adcChannel       = EFI_ADC_3;  // PA3
+    engineConfiguration->knock.adcChannel       = EFI_ADC_3;  // PA3
     engineConfiguration->map.sensor.hwChannel   = EFI_ADC_5;  // PA5
     engineConfiguration->vbattAdcChannel        = EFI_ADC_0;  // PA0
     engineConfiguration->clt.adcChannel         = EFI_ADC_6;  // PA6
