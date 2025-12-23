@@ -7,17 +7,15 @@
 const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 	switch(brainPin) {
 		case Gpio::B14: return "B14 Output";
-		case Gpio::D10: return "Bobina 1";
-		case Gpio::D11: return "Bobina 2";
-		case Gpio::D12: return "Bobina 3";
-		case Gpio::D13: return "Bobina 4";
-		case Gpio::E10: return "Inyector 4";
-		case Gpio::E2: return "VR/Hall 1 (E2)";
-		case Gpio::E3: return "VR/Hall 2 (E3)";
-		case Gpio::E4: return "VR/Hall 3 (E4)";
-		case Gpio::E7: return "Inyector 1";
-		case Gpio::E8: return "Inyector 2";
-		case Gpio::E9: return "Inyector 3";
+		case Gpio::C6: return "VR/Hall 1 (C6)";
+		case Gpio::E0: return "Inyector 1";
+		case Gpio::E1: return "Inyector 2";
+		case Gpio::E2: return "Inyector 3";
+		case Gpio::E3: return "Inyector 4";
+		case Gpio::E4: return "Bobina 1";
+		case Gpio::E5: return "Bobina 2";
+		case Gpio::E6: return "Bobina 3";
+		case Gpio::E7: return "Bobina 4";
 		default: return nullptr;
 	}
 	return nullptr;
