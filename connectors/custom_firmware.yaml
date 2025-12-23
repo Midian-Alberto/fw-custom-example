@@ -68,17 +68,17 @@ pins:
     class: analog_inputs
     ts_name: Analog Inputs 15 (C5)
 
-  - id: [E2, E2]
+  - id: [C6, C6]
     class: [switch_inputs, event_inputs]
-    ts_name: VR/Hall 1 (E2)
+    ts_name: VR/Hall 1 (C6)
 
-  - id: [E3, E3]
-    class: [switch_inputs, event_inputs]
-    ts_name: VR/Hall 2 (E3)
+ # - id: [E3, E3]
+   # class: [switch_inputs, event_inputs]
+    #ts_name: VR/Hall 2 (E3)
 
-  - id: [E4, E4]
-    class: [switch_inputs, event_inputs]
-    ts_name: VR/Hall 3 (E4)
+  #- id: [E4, E4]
+    #class: [switch_inputs, event_inputs]
+    #ts_name: VR/Hall 3 (E4)
 
     ###############################################################
 
