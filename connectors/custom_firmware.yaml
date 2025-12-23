@@ -117,28 +117,6 @@ pins:
     ts_name: "Bobina 4"
     
 
-  # --- RELES Y SALIDAS ---
-  - id: B10
-    class: outputs
-    ts_name: "Rele Principal"
-    
-  - id: B11
-    class: outputs
-    ts_name: "Bomba Gasolina"
-    
-  - id: B13
-    class: outputs
-    ts_name: "Tacometro"
-    
-  - id: B14
-    class: outputs
-    ts_name: "Fan 1"
-    
-  - id: B15
-    class: outputs
-    ts_name: "Fan 2"
-    
-# --- ENTRADAS DIGITALES ---
 
 
       
