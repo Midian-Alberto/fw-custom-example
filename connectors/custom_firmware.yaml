@@ -97,8 +97,7 @@ pins:
     
   - id: E10
     class: outputs
-    ts_name: "Inyector 4"
-    
+    ts_name: "Inyector 4"   
 
   # --- BOBINAS ---
   - id: D10
@@ -140,22 +139,6 @@ pins:
     ts_name: "Fan 2"
     
 # --- ENTRADAS DIGITALES ---
-  # El trigger debe tener estas dos clases
 
-    
-  - id: E12
-    class: switch_inputs
-    ts_name: "Clutch Fondo"
-    
-  - id: E13
-    class: switch_inputs
-    ts_name: "Clutch Arriba"
 
-  - id: E14
-    class: switch_inputs
-    ts_name: "Brake"
-
-    
-
-    
-    
+      
