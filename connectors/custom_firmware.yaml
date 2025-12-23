@@ -82,35 +82,80 @@ pins:
 
     ###############################################################
 
+  # --- INYECTORES ---
   - id: E7
     class: outputs
     ts_name: "Inyector 1"
-
+    
   - id: E8
     class: outputs
     ts_name: "Inyector 2"
-
+    
   - id: E9
     class: outputs
     ts_name: "Inyector 3"
-
+    
   - id: E10
     class: outputs
     ts_name: "Inyector 4"
+    
 
+  # --- BOBINAS ---
   - id: D10
     class: outputs
     ts_name: "Bobina 1"
-
+    
   - id: D11
     class: outputs
     ts_name: "Bobina 2"
-
+    
   - id: D12
     class: outputs
     ts_name: "Bobina 3"
-
+    
   - id: D13
     class: outputs
     ts_name: "Bobina 4"
+    
 
+  # --- RELES Y SALIDAS ---
+  - id: B10
+    class: outputs
+    ts_name: "Rele Principal"
+    
+  - id: B11
+    class: outputs
+    ts_name: "Bomba Gasolina"
+    
+  - id: B13
+    class: outputs
+    ts_name: "Tacometro"
+    
+  - id: B14
+    class: outputs
+    ts_name: "Fan 1"
+    
+  - id: B15
+    class: outputs
+    ts_name: "Fan 2"
+    
+# --- ENTRADAS DIGITALES ---
+  # El trigger debe tener estas dos clases
+
+    
+  - id: E12
+    class: switch_inputs
+    ts_name: "Clutch Fondo"
+    
+  - id: E13
+    class: switch_inputs
+    ts_name: "Clutch Arriba"
+
+  - id: E14
+    class: switch_inputs
+    ts_name: "Brake"
+
+    
+
+    
+    
