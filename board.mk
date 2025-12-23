@@ -10,7 +10,7 @@ include $(BOARD_DIR)/meta-info.env
 DDEFS += -DEFI_WIDEBAND_FIRMWARE_UPDATE=TRUE
 
 # Activar knock detection por software
-DDEFS += -DEFI_SOFTWARE_KNOCK=TRUE
+#DDEFS += -DEFI_SOFTWARE_KNOCK=TRUE
 
 
 # assign critical LED to a non-existent pin if you do not have it on your board
