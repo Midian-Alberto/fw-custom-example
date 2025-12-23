@@ -9,6 +9,10 @@ include $(BOARD_DIR)/meta-info.env
 # this would save some flash while being unable to update WBO controller firmware
 DDEFS += -DEFI_WIDEBAND_FIRMWARE_UPDATE=TRUE
 
+# Activar knock detection por software
+DDEFS += -DEFI_SOFTWARE_KNOCK=TRUE
+
+
 # assign critical LED to a non-existent pin if you do not have it on your board
 # good old PD14 is still the default value
 # DDEFS += -DLED_CRITICAL_ERROR_BRAIN_PIN=Gpio::I15
