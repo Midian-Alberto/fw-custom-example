@@ -55,7 +55,7 @@ static void customBoardDefaultConfiguration() {
 
     // 5. ENTRADAS DIGITALES (Switches)
     // -----------------------------------------
-    engineConfiguration->acSwitch      = Gpio::E15;
+    //engineConfiguration->acSwitch      = Gpio::E15;
     engineConfiguration->clutchUpPin   = Gpio::E13;
     engineConfiguration->clutchDownPin = Gpio::E12;
     engineConfiguration->brakePedalPin = Gpio::E14;
