@@ -6,7 +6,7 @@ pins:
 
   - id: EFI_ADC_1
     class: analog_inputs
-    ts_name: Analog Inputs 1 (A1)
+    ts_name: TPS (A1)
 
   - id: EFI_ADC_2
     class: analog_inputs
