@@ -82,3 +82,35 @@ pins:
 
     ###############################################################
 
+  - id: E7
+    class: outputs
+    ts_name: "Inyector 1"
+
+  - id: E8
+    class: outputs
+    ts_name: "Inyector 2"
+
+  - id: E9
+    class: outputs
+    ts_name: "Inyector 3"
+
+  - id: E10
+    class: outputs
+    ts_name: "Inyector 4"
+
+  - id: D10
+    class: outputs
+    ts_name: "Bobina 1"
+
+  - id: D11
+    class: outputs
+    ts_name: "Bobina 2"
+
+  - id: D12
+    class: outputs
+    ts_name: "Bobina 3"
+
+  - id: D13
+    class: outputs
+    ts_name: "Bobina 4"
+
