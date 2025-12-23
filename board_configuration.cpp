@@ -22,18 +22,18 @@ static void customBoardDefaultConfiguration() {
 
     // 1. INYECCIÓN (Puerto E Alto)
     // -----------------------------------------
-    engineConfiguration->injectionPins[0] = Gpio::E7;  // Cilindro 1
-    engineConfiguration->injectionPins[1] = Gpio::E8;  // Cilindro 2
-    engineConfiguration->injectionPins[2] = Gpio::E9;  // Cilindro 3
-    engineConfiguration->injectionPins[3] = Gpio::E10; // Cilindro 4
+    engineConfiguration->injectionPins[0] = Gpio::E0;  // Cilindro 1
+    engineConfiguration->injectionPins[1] = Gpio::E1;  // Cilindro 2
+    engineConfiguration->injectionPins[2] = Gpio::E2;  // Cilindro 3
+    engineConfiguration->injectionPins[3] = Gpio::E3; // Cilindro 4
 
     // 2. IGNICIÓN (Puerto D Medio)
     // -----------------------------------------
     // Usamos D10-D13. Esto deja libres D8 y D9 para Bluetooth.
-    engineConfiguration->ignitionPins[0] = Gpio::D10; // Bobina 1
-    engineConfiguration->ignitionPins[1] = Gpio::D11; // Bobina 2
-    engineConfiguration->ignitionPins[2] = Gpio::D12; // Bobina 3
-    engineConfiguration->ignitionPins[3] = Gpio::D13; // Bobina 4
+    engineConfiguration->ignitionPins[0] = Gpio::E4; // Bobina 1
+    engineConfiguration->ignitionPins[1] = Gpio::E5; // Bobina 2
+    engineConfiguration->ignitionPins[2] = Gpio::E6; // Bobina 3
+    engineConfiguration->ignitionPins[3] = Gpio::E7; // Bobina 4
 
     // 3. TRIGGER (Sensor de Posición)
     // -----------------------------------------
