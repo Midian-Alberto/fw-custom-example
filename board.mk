@@ -1,6 +1,5 @@
 include $(BOARD_DIR)/firmware/firmware.mk
 
-
 BOARDINC += $(BOARD_DIR)/generated/controllers/generated
 
 # defines SHORT_BOARD_NAME
