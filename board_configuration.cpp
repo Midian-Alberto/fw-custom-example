@@ -1,11 +1,7 @@
 #include "pch.h"
 #include "board_overrides.h"
 
-// =============================================
-// DESACTIVAR LEDS (CRÍTICO)
-// =============================================
-// D12 y D13 serán usados para Bobinas.
-// Debemos decirle al sistema que NO intente usarlos como LEDs.
+
 
 Gpio getCommsLedPin() {
 	return Gpio::Unassigned;
@@ -16,7 +12,7 @@ Gpio getRunningLedPin() {
 }
 
 Gpio getWarningLedPin() {
-	return Gpio::Unassigned;
+	return Gpio::D15;
 }
 
 // =============================================
