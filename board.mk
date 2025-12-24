@@ -12,12 +12,18 @@ DDEFS += -DSTM32F407xx
 DDEFS += -DEFI_WIDEBAND_FIRMWARE_UPDATE=TRUE
 
 DDEFS += -DSTM32_ADC_USE_ADC3=TRUE
-# todo: make knock pin software-selectable?
-DDEFS += -DEFI_SOFTWARE_KNOCK=TRUE -DSTM32_ADC_USE_ADC3=TRUE
+DDEFS += -DEFI_SOFTWARE_KNOCK=TRUE 
+
+# Hardware serial port on UART 2 -> PD5/PD6
+	DDEFS += -DSTM32_UART_USE_USART2=TRUE
+	DDEFS += -DTS_PRIMARY_UxART_PORT=UARTD2
+	DDEFS += -DEFI_CONSOLE_TX_BRAIN_PIN=Gpio::D5 -DEFI_CONSOLE_RX_BRAIN_PIN=Gpio::D6
 
 # assign critical LED to a non-existent pin if you do not have it on your board
 # good old PD14 is still the default value
 # DDEFS += -DLED_CRITICAL_ERROR_BRAIN_PIN=Gpio::I15
+
+
 
 # EGT chip
 #un-comment to enable
