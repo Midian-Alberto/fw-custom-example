@@ -1437,8 +1437,8 @@
 #define operation_mode_e_FOUR_STROKE_TWELVE_TIMES_CRANK_SENSOR 6
 #define operation_mode_e_OM_NONE 0
 #define operation_mode_e_TWO_STROKE 3
-#define output_pin_e_enum 0="NONE",23="B5 Output",24="B6 Output",25="B7 Output",26="B8 Output",27="B9 Output",70="Bobina 1",71="Bobina 2",72="Bobina 3",73="Bobina 4",66="Inyector 1",67="Inyector 2",68="Inyector 3",69="Inyector 4"
-#define output_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","B5 Output","B6 Output","B7 Output","B8 Output","B9 Output","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Inyector 1","Inyector 2","Inyector 3","Inyector 4","Bobina 1","Bobina 2","Bobina 3","Bobina 4"
+#define output_pin_e_enum 0="NONE",70="Bobina1 (E4)",71="Bobina2 (E5)",72="Bobina3 (E6)",73="Bobina4 (E7)",66="Inyector1 (E0)",67="Inyector2 (E1)",68="Inyector3 (E2)",69="Inyector4 (E3)",23="Output (B5)",24="Output (B6)",25="Output (B7)",26="Output (B8)",27="Output (B9)"
+#define output_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Output (B5)","Output (B6)","Output (B7)","Output (B8)","Output (B9)","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","Inyector1 (E0)","Inyector2 (E1)","Inyector3 (E2)","Inyector4 (E3)","Bobina1 (E4)","Bobina2 (E5)","Bobina3 (E6)","Bobina4 (E7)"
 #define PACK_ADD_TEMPERATURE 40
 #define PACK_MULT_AFR 1000
 #define PACK_MULT_AFR_CFG 10
@@ -1545,7 +1545,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 1526783669
+#define SIGNATURE_HASH 3095762628
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -2136,7 +2136,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.12.24.407prueba1.1526783669"
+#define TS_SIGNATURE "rusEFI main.2025.12.24.407prueba1.3095762628"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
