@@ -14,10 +14,12 @@ DDEFS += -DEFI_WIDEBAND_FIRMWARE_UPDATE=TRUE
 DDEFS += -DSTM32_ADC_USE_ADC3=TRUE
 DDEFS += -DEFI_SOFTWARE_KNOCK=TRUE -DSTM32_ADC_USE_ADC3=TRUE
 
-# Hardware serial port on UART 2 -> PD5/PD6
-DDEFS += -DSTM32_UART_USE_USART2=TRUE
-DDEFS += -DTS_PRIMARY_UxART_PORT=UARTD2
-DDEFS += -DEFI_CONSOLE_TX_BRAIN_PIN=Gpio::D5 -DEFI_CONSOLE_RX_BRAIN_PIN=Gpio::D6
+# we do not have much Lua RAM, let's drop some fancy functions
+DDEFS += -DWITH_LUA_CONSUMPTION=FALSE
+DDEFS += -DWITH_LUA_PID=FALSE
+DDEFS += -DWITH_LUA_STOP_ENGINE=FALSE
+
+DDEFS += $(PRIMARY_COMMUNICATION_PORT_USART2)
 
 # assign critical LED to a non-existent pin if you do not have it on your board
 # good old PD14 is still the default value
