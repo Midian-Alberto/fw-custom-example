@@ -15,6 +15,7 @@ const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 		case Gpio::C7: return "VR/Hall 2 (C7)";
 		case Gpio::E0: return "Inyector1 (E0)";
 		case Gpio::E1: return "Inyector2 (E1)";
+		case Gpio::E12: return "Bobina4 (E12)";
 		case Gpio::E2: return "Inyector3 (E2)";
 		case Gpio::E3: return "Inyector4 (E3)";
 		case Gpio::E4: return "Bobina1 (E4)";
