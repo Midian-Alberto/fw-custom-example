@@ -1,7 +1,7 @@
 pins:
   - id: EFI_ADC_0
     class: analog_inputs
-# getAdcChannelBrainPin in 'stm32_adc.cpp' says EFI_ADC_0 is PA0
+    # getAdcChannelBrainPin in 'stm32_adc.cpp' says EFI_ADC_0 is PA0
     ts_name: Battery Sense (A0)
     
   - id: EFI_ADC_1
@@ -81,60 +81,69 @@ pins:
   # --- INYECTORES ---
   - id: E0
     class: outputs
-    ts_name: "Inyector 1"
+    ts_name: Inyector1 (E0)
     
   - id: E1
     class: outputs
-    ts_name: "Inyector 2"
+    ts_name: Inyector2 (E1)
     
   - id: E2
     class: outputs
-    ts_name: "Inyector 3"
+    ts_name: Inyector3 (E2)
     
   - id: E3
     class: outputs
-    ts_name: "Inyector 4"   
+    ts_name: Inyector4 (E3)   
 
   # --- BOBINAS ---
   - id: E4
     class: outputs
-    ts_name: "Bobina 1"
+    ts_name: Bobina1 (E4)
     
   - id: E5
     class: outputs
-    ts_name: "Bobina 2"
+    ts_name: Bobina2 (E5)
     
   - id: E6
     class: outputs
-    ts_name: "Bobina 3"
+    ts_name: Bobina3 (E6)
     
   - id: E7
     class: outputs
-    ts_name: "Bobina 4"
+    ts_name: Bobina4 (E7)
+
+    ############################################
+
+  - id: E12
+    class: [switch_inputs, event_inputs]
+    ts_name: ClutchDown (E12)
+
+  - id: E13
+    class: [switch_inputs, event_inputs]
+    ts_name: ClutchUp (E13)
+    
+  - id: E14
+    class: [switch_inputs, event_inputs]
+    ts_name: Brake (E14)
 
     ############################################
 
   - id: B5
     class: outputs
-    ts_name: B5 Output
+    ts_name: Output (B5)
 
   - id: B6
     class: outputs
-    ts_name: B6 Output  
-
+    ts_name: Output (B6)
 
   - id: B7
     class: outputs
-    ts_name: B7 Output
+    ts_name: Output (B7)
 
   - id: B8
     class: outputs
-    ts_name: B8 Output
-
+    ts_name: Output (B8)
     
   - id: B9
     class: outputs
-    ts_name: B9 Output
-
-
-      
+    ts_name: Output (B9)
