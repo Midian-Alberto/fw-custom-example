@@ -39,7 +39,7 @@ static void customBoardDefaultConfiguration() {
     // -----------------------------------------
     // 120-2 en Arbol de Levas (Camshaft) en C6.
     engineConfiguration->triggerInputPins[0] = Gpio::C6;       
-    engineConfiguration->triggerInputPins[1] = Gpio::Unassigned; 
+    engineConfiguration->triggerInputPins[1] = Gpio::C7; 
 
     // 4. BOMBA Y RELÉS (Puerto B)
     // -----------------------------------------
@@ -58,7 +58,7 @@ static void customBoardDefaultConfiguration() {
     // 6. SENSORES ANALÓGICOS
     // -----------------------------------------
     // Mapeo estándar del STM32F407
-    engineConfiguration->tps.adcChannel      = EFI_ADC_1;  // PA1
+    //engineConfiguration->tps.adcChannel      = EFI_ADC_1;  // PA1
     //engineConfiguration->knock.adcChannel       = EFI_ADC_3;  // PA3
     engineConfiguration->map.sensor.hwChannel   = EFI_ADC_5;  // PA5
     engineConfiguration->vbattAdcChannel        = EFI_ADC_0;  // PA0
@@ -74,9 +74,8 @@ static void customBoardDefaultConfiguration() {
 
     // 7. COMUNICACIÓN
     // -----------------------------------------
-    // Dejamos CAN sin asignar para ahorrar recursos y pines
-    engineConfiguration->canTxPin = Gpio::Unassigned;
-    engineConfiguration->canRxPin = Gpio::Unassigned;
+	engineConfiguration->canTxPin = Gpio::B13;
+	engineConfiguration->canRxPin = Gpio::B12;
     
     // NOTA: Los pines D8 y D9 NO se tocan aquí.
     // Se activarán automáticamente como Serial 3 en el Makefile.
