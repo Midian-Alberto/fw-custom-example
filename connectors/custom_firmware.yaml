@@ -113,9 +113,18 @@ pins:
     ts_name: Bobina4 (E7)
 
     ############################################
+    
   - id: E12
     class: switch_inputs
-    ts_name: Bobina4 (E12)
+    ts_name: ClutchDown (E12)
+
+  - id: E13
+    class: switch_inputs
+    ts_name: ClutchUp (E13)
+
+  - id: E14
+    class: switch_inputs
+    ts_name: Brake (E14)
  
     ############################################
 
@@ -138,3 +147,32 @@ pins:
   - id: B9
     class: outputs
     ts_name: Output (B9)
+    
+  - id: B10
+    class: outputs
+    ts_name: MainRelay (B10)
+    
+  - id: B11
+    class: outputs
+    ts_name: FuelPump (B11)
+    
+  - id: B13
+    class: outputs
+    ts_name: TachOut (B13)
+    
+  - id: B14
+    class: outputs
+    ts_name: FanRelay1 (B14)
+
+  - id: B15
+    class: outputs
+    ts_name: FanRelay2 (B15)
+
+
+
+
+    
+
+
+
+    
