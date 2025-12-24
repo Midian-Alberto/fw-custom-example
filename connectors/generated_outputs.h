@@ -17,6 +17,11 @@ Gpio GENERATED_OUTPUTS = {
 	Gpio::B7, // Output (B7)
 	Gpio::B8, // Output (B8)
 	Gpio::B9, // Output (B9)
+	Gpio::B10, // MainRelay (B10)
+	Gpio::B11, // FuelPump (B11)
+	Gpio::B13, // TachOut (B13)
+	Gpio::B14, // FanRelay1 (B14)
+	Gpio::B15, // FanRelay2 (B15)
 // "Inyector1 (E0)",
 // "Inyector2 (E1)",
 // "Inyector3 (E2)",
@@ -30,4 +35,9 @@ Gpio GENERATED_OUTPUTS = {
 // "Output (B7)",
 // "Output (B8)",
 // "Output (B9)",
+// "MainRelay (B10)",
+// "FuelPump (B11)",
+// "TachOut (B13)",
+// "FanRelay1 (B14)",
+// "FanRelay2 (B15)",
 }
