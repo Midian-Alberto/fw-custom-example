@@ -6,21 +6,21 @@
 // see comments at declaration in pin_repository.h
 const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 	switch(brainPin) {
-		case Gpio::B5: return "B5 Output";
-		case Gpio::B6: return "B6 Output";
-		case Gpio::B7: return "B7 Output";
-		case Gpio::B8: return "B8 Output";
-		case Gpio::B9: return "B9 Output";
+		case Gpio::B5: return "Output (B5)";
+		case Gpio::B6: return "Output (B6)";
+		case Gpio::B7: return "Output (B7)";
+		case Gpio::B8: return "Output (B8)";
+		case Gpio::B9: return "Output (B9)";
 		case Gpio::C6: return "VR/Hall 1 (C6)";
 		case Gpio::C7: return "VR/Hall 2 (C7)";
-		case Gpio::E0: return "Inyector 1";
-		case Gpio::E1: return "Inyector 2";
-		case Gpio::E2: return "Inyector 3";
-		case Gpio::E3: return "Inyector 4";
-		case Gpio::E4: return "Bobina 1";
-		case Gpio::E5: return "Bobina 2";
-		case Gpio::E6: return "Bobina 3";
-		case Gpio::E7: return "Bobina 4";
+		case Gpio::E0: return "Inyector1 (E0)";
+		case Gpio::E1: return "Inyector2 (E1)";
+		case Gpio::E2: return "Inyector3 (E2)";
+		case Gpio::E3: return "Inyector4 (E3)";
+		case Gpio::E4: return "Bobina1 (E4)";
+		case Gpio::E5: return "Bobina2 (E5)";
+		case Gpio::E6: return "Bobina3 (E6)";
+		case Gpio::E7: return "Bobina4 (E7)";
 		default: return nullptr;
 	}
 	return nullptr;

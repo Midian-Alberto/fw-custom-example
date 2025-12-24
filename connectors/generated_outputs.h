@@ -4,30 +4,30 @@
 #pragma once
 
 Gpio GENERATED_OUTPUTS = {
-	Gpio::E0, // Inyector 1
-	Gpio::E1, // Inyector 2
-	Gpio::E2, // Inyector 3
-	Gpio::E3, // Inyector 4
-	Gpio::E4, // Bobina 1
-	Gpio::E5, // Bobina 2
-	Gpio::E6, // Bobina 3
-	Gpio::E7, // Bobina 4
-	Gpio::B5, // B5 Output
-	Gpio::B6, // B6 Output
-	Gpio::B7, // B7 Output
-	Gpio::B8, // B8 Output
-	Gpio::B9, // B9 Output
-// "Inyector 1",
-// "Inyector 2",
-// "Inyector 3",
-// "Inyector 4",
-// "Bobina 1",
-// "Bobina 2",
-// "Bobina 3",
-// "Bobina 4",
-// "B5 Output",
-// "B6 Output",
-// "B7 Output",
-// "B8 Output",
-// "B9 Output",
+	Gpio::E0, // Inyector1 (E0)
+	Gpio::E1, // Inyector2 (E1)
+	Gpio::E2, // Inyector3 (E2)
+	Gpio::E3, // Inyector4 (E3)
+	Gpio::E4, // Bobina1 (E4)
+	Gpio::E5, // Bobina2 (E5)
+	Gpio::E6, // Bobina3 (E6)
+	Gpio::E7, // Bobina4 (E7)
+	Gpio::B5, // Output (B5)
+	Gpio::B6, // Output (B6)
+	Gpio::B7, // Output (B7)
+	Gpio::B8, // Output (B8)
+	Gpio::B9, // Output (B9)
+// "Inyector1 (E0)",
+// "Inyector2 (E1)",
+// "Inyector3 (E2)",
+// "Inyector4 (E3)",
+// "Bobina1 (E4)",
+// "Bobina2 (E5)",
+// "Bobina3 (E6)",
+// "Bobina4 (E7)",
+// "Output (B5)",
+// "Output (B6)",
+// "Output (B7)",
+// "Output (B8)",
+// "Output (B9)",
 }
