@@ -12,6 +12,7 @@ const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 		case Gpio::B8: return "B8 Output";
 		case Gpio::B9: return "B9 Output";
 		case Gpio::C6: return "VR/Hall 1 (C6)";
+		case Gpio::C7: return "VR/Hall 2 (C7)";
 		case Gpio::E0: return "Inyector 1";
 		case Gpio::E1: return "Inyector 2";
 		case Gpio::E2: return "Inyector 3";
